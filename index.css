@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.test1 {
+    width: 700px;
+	height: 700px;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.outer-circle {
+    border: 3px solid blueviolet;
+    border-radius: 50%;
+    width: 90%;
+    height: 90%;
+    position: relative;
+    overflow: hidden;
+}
+
+.inner-circle {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: darkcyan;
+}
+
+
+#canvas {
+    margin: 50px 50px;
+    border: 2px solid black; 
+}
