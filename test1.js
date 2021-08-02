@@ -7,9 +7,6 @@ function func(event) {
     elem.style.left = event.clientX - parseInt(window.getComputedStyle(elem, "").width) / 2 + "px";
     elem.style.top = event.clientY - parseInt(window.getComputedStyle(elem, "").height) / 2 + "px";
 
-    // console.log(elem.offsetParent)
-    console.log(getComputedStyle(outer).width);
-
     outer = window.getComputedStyle(outer);
 
     if (parseInt(elem.style.left) < 50) {
